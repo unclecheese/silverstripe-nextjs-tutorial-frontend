@@ -1,0 +1,8 @@
+overwrite: true
+schema: ${SILVERSTRIPE_BASE_URL}/graphql
+generates:
+  ./ss-schema.ts:
+    plugins:
+      - "typescript"
+config:
+  useImplementingTypes: true

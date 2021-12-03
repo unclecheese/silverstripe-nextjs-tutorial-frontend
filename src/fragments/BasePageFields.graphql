@@ -1,0 +1,12 @@
+#import "./NavigationFields.graphql"
+#import "./BaseFields.graphql"
+
+fragment BasePageFields on PageInterface {
+    ...BaseFields
+    title
+    content
+    link    
+    ... on PageInterface {
+        ...NavigationFields
+    }
+}
