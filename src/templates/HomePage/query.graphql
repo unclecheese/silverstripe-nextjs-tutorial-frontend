@@ -1,0 +1,11 @@
+#import "../../fragments/BasePageFields.graphql"
+
+query ReadOneHomePage($link: String!, $stage: VersionedQueryMode) {
+  readOneHomePage(link: $link, versioning: { mode: $stage }) {
+    ...BasePageFields
+    bannerImage {
+        absoluteLink
+    }
+    bannerText
+  }
+}
