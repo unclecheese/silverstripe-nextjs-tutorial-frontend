@@ -1,0 +1,8 @@
+fragment FileBlockFields on FileBlock {
+	fileID
+	file { 
+ 		absoluteLink
+		hashID
+	}
+
+}

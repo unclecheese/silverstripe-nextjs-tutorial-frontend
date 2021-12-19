@@ -1,0 +1,7 @@
+#import "../../fragments/BasePageFields.graphql"
+
+query ReadOneBlockPage($link: String!, $stage: VersionedQueryMode) {
+  readOneBlockPage(link: $link, versioning: { mode: $stage }) {
+    ...BasePageFields
+  }
+}

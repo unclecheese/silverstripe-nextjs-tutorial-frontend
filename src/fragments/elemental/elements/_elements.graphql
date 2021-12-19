@@ -3,6 +3,8 @@
 #import "../../BaseFields.graphql"
 #import "./BaseElementFields.graphql"
 #import "./ElementContentFields.graphql"
+#import "./ElementBannerFields.graphql"
+#import "./FileBlockFields.graphql"
 
 fragment ElementsFields on BaseElementInterface {
 	...BaseFields
@@ -10,6 +12,14 @@ fragment ElementsFields on BaseElementInterface {
 
     ... on ElementContent {
         ...ElementContentFields
+    }
+
+    ... on ElementBanner {
+        ...ElementBannerFields
+    }
+
+    ... on FileBlock {
+        ...FileBlockFields
     }
 
 }

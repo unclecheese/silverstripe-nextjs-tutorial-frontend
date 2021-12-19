@@ -7,7 +7,7 @@ fragment BasePageFields on PageInterface {
     title
     content
     link    
-    ... on PageInterface {
+    ... on BlockPageInterface {
         ...NavigationFields
         elementalArea {
             ...ElementalAreaFields

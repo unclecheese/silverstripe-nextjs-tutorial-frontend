@@ -1,0 +1,13 @@
+fragment ElementBannerFields on ElementBanner {
+	content
+	textAlignment
+	bannerImageID
+	bannerLinkID
+	bannerImage { 
+ 		__typename ## add your fields below
+	}
+	bannerLink { 
+ 		__typename ## add your fields below
+	}
+
+}
